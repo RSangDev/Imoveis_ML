@@ -14,7 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from etl.pipeline import run_pipeline # noqa
+from etl.pipeline import run_pipeline  # noqa
 from models.ml_models import (  # noqa
     train_regression,
     predict_price,
@@ -602,7 +602,7 @@ elif page == "🤖 Modelo Preditivo":
         with col_a:
             st.markdown(
                 '<div class="section-title">Importância das Features'
-                ' (|Coeficiente|)</div>',
+                " (|Coeficiente|)</div>",
                 unsafe_allow_html=True,
             )
             coef = reg_result["coef_df"]
@@ -1036,8 +1036,8 @@ elif page == "⚙️ Pipeline ETL":
         )
         if icon != "🎯":
             st.markdown(
-                "<div style='text-align:center; color:#30363d;" \
-                " font-size:1.2rem;'>↓</div>", 
+                "<div style='text-align:center; color:#30363d;"
+                " font-size:1.2rem;'>↓</div>",
                 unsafe_allow_html=True,
             )
 
